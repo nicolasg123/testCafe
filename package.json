@@ -1,0 +1,35 @@
+{
+  "name": "automation-bat-ui",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "rm -rf logs & PIPELINE_USER=E2euser node -r ts-node/register --max-old-space-size=4096 main.ts ",
+    "test:local": "rm -rf logs & BROWSER=chrome ENV=dev PIPELINE_USER=E2euser node -r ts-node/register --max-old-space-size=4096 main.ts",
+    "test:devlocal": "rm -rf logs & BROWSER=chrome ENV=devLocal PIPELINE_USER=E2euser node -r ts-node/register --max-old-space-size=4096 main.ts",
+    "test:headless": "rm -rf logs & BROWSER=chromeHeadless ENV=devx PIPELINE_USER=E2euser node -r ts-node/register --max-old-space-size=4096 main.ts",
+    "debug": "testcafe --skip-js-errors  $NODE_DEBUG_OPTION chrome",
+    "debugSlower": "testcafe --speed=0.5 --skip-js-errors  $NODE_DEBUG_OPTION chrome",
+    "report": "node report-generator.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "ts-node": "^8.5.2",
+    "@ffmpeg-installer/ffmpeg": "^1.0.20",
+    "chalk": "^2.4.2",
+    "multiple-cucumber-html-reporter": "^1.11.6",
+    "testcafe": "^1.9.3",
+    "testcafe-reporter-cucumber-json": "^1.2.0",
+    "uuid": "latest",
+    "tslint": "^5.18.0",
+    "typescript": "^3.5.2"
+  },
+  "dependencies": {
+    "@testing-library/testcafe": "^4.2.0",
+    "downloads-folder": "^3.0.0",
+    "is-zip-file": "^1.0.2",
+    "os": "^0.1.1",
+    "rimraf": "^3.0.2"
+  }
+}
