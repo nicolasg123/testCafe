@@ -4,7 +4,7 @@ import { BatNavigator } from '../../pageobjects/BatNavigator'
 import { Suites } from '../../config/Suites'
 import { IBasicTest, TestMeta, TestMetaSeverity } from '../IBasicTest'
 import { TestCaseRunner } from '../../config/TestCaseRunner'
-import { ApiTestingPage } from '../../pageobjects/bat/ApiTestingPage'
+import { ApiTestingPage } from '../../pageobjects/Github/ApiTestingPage'
 
 
 /**

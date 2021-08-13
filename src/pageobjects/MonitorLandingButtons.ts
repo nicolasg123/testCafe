@@ -1,6 +1,6 @@
 import { t, Selector } from 'testcafe'
 import { WaitConfig } from '../config/WaitConfig'
-import { ApiTestingPage } from './bat/ApiTestingPage'
+import { ApiTestingPage } from './Github/ApiTestingPage'
 
 
 const apiTestingPage = new ApiTestingPage()

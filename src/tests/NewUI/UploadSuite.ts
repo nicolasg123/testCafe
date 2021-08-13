@@ -5,7 +5,7 @@ import { Suites } from '../../config/Suites'
 import { IBasicTest, TestMeta, TestMetaSeverity } from '../IBasicTest'
 import { TestCaseRunner } from '../../config/TestCaseRunner'
 import Upload from '../../pageobjects/Upload'
-import { AnypointLandingPage } from '../../pageobjects/bat/AnypointLandingPage'
+import { AnypointLandingPage } from '../../pageobjects/Github/AnypointLandingPage'
 
 
 /**

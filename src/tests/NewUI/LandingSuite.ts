@@ -5,7 +5,7 @@ import { Suites } from '../../config/Suites'
 import { IBasicTest, TestMeta, TestMetaSeverity } from '../IBasicTest'
 import { TestCaseRunner } from '../../config/TestCaseRunner'
 import { AFMLanding } from '../../pageobjects/AFMLanding'
-import { ApiTestingPage } from '../../pageobjects/bat/ApiTestingPage'
+import { ApiTestingPage } from '../../pageobjects/Github/ApiTestingPage'
 
 
 /**

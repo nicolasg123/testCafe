@@ -1,5 +1,5 @@
 import { t } from 'testcafe'
-import { CreateMonitorLandingPage } from './bat/CreateMonitorLandingPage'
+import { CreateMonitorLandingPage } from './Github/CreateMonitorLandingPage'
 import { WaitConfig } from '../config/WaitConfig'
 
   

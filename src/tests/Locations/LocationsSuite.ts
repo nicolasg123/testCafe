@@ -5,7 +5,7 @@ import { ConsoleOutput } from '../../config/ConsoleOutput'
 import { TestCaseRunner } from '../../config/TestCaseRunner'
 import { Suites } from '../../config/Suites'
 import { TestUtils } from '../../utils/TestUtils'
-import { ApiTestingPage } from '../../pageobjects/bat/ApiTestingPage'
+import { ApiTestingPage } from '../../pageobjects/Github/ApiTestingPage'
 import { Locations } from '../../pageobjects/Locations'
 
 

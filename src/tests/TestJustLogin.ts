@@ -5,7 +5,7 @@ import { Suites } from '../config/Suites'
 import { IBasicTest, TestMeta, TestMetaSeverity } from './IBasicTest'
 import { TestCaseRunner } from '../config/TestCaseRunner'
 import { WaitConfig } from '../config/WaitConfig'
-import { ApiTestingPage } from '../pageobjects/bat/ApiTestingPage'
+import { ApiTestingPage } from '../pageobjects/Github/ApiTestingPage'
 
 /**
  * Test used to just login with test cafe

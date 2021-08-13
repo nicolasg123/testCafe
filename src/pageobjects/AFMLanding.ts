@@ -1,7 +1,7 @@
 import { t } from 'testcafe'
-import { MonitorLandingPage } from './bat/MonitorLandingPage'
+import { MonitorLandingPage } from './Github/MonitorLandingPage'
 import { WaitConfig } from '../config/WaitConfig'
-import { AnypointLandingPage } from './bat/AnypointLandingPage';
+import { AnypointLandingPage } from './Github/AnypointLandingPage';
 
 const monitorLandingPage = new MonitorLandingPage()
 const anypointLanding = new AnypointLandingPage()

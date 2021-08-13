@@ -1,7 +1,7 @@
 import { t } from 'testcafe'
-import { MonitorDetailPageSelector } from './bat/MonitorDetailPageSelector'
+import { MonitorDetailPageSelector } from './Github/MonitorDetailPageSelector'
 import { WaitConfig } from '../config/WaitConfig'
-import { MonitorExecutionDetailPageSelectors } from './bat/MonitorExecutionDetailPageSelectors'
+import { MonitorExecutionDetailPageSelectors } from './Github/MonitorExecutionDetailPageSelectors'
 
 
 const monitorDetailPageSelector = new MonitorDetailPageSelector()

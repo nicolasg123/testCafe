@@ -2,7 +2,7 @@ import { t } from 'testcafe'
 
 import { WaitConfig } from '../config/WaitConfig'
 import { getByText } from '@testing-library/testcafe'
-import { ApiTestingPage } from './bat/ApiTestingPage'
+import { ApiTestingPage } from './Github/ApiTestingPage'
 
 const apiTestingPage = new ApiTestingPage()
 const cancelButton = getByText("Cancel")

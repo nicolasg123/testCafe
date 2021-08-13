@@ -1,13 +1,13 @@
 import  {t, Selector} from 'testcafe'
 import  {WaitConfig}  from '../config/WaitConfig'
-import { MonitoringLandingAfterCreation } from './bat/MonitoringLandingActionBar'
-import { EditMonitorSelectors } from './bat/EditMonitorSelectors'
-import { DeleteMonitorSelectors } from './bat/DeleteMonitorSelectors'
-import { RunMonitorDialogSelectors } from './bat/RunMonitorDialogSelectors'
-import { UploadingPage } from './bat/UploadingPage'
-import { CopyMonitorDialogSelectors } from './bat/CopyMonitorDialogSelectors'
-import { ManageLocationsDialogSelectors } from './bat/ManageLocationsDialogSelectors'
-import { CreateMonitorLandingPage } from './bat/CreateMonitorLandingPage'
+import { MonitoringLandingAfterCreation } from './Github/MonitoringLandingActionBar'
+import { EditMonitorSelectors } from './Github/EditMonitorSelectors'
+import { DeleteMonitorSelectors } from './Github/DeleteMonitorSelectors'
+import { RunMonitorDialogSelectors } from './Github/RunMonitorDialogSelectors'
+import { UploadingPage } from './Github/UploadingPage'
+import { CopyMonitorDialogSelectors } from './Github/CopyMonitorDialogSelectors'
+import { ManageLocationsDialogSelectors } from './Github/ManageLocationsDialogSelectors'
+import { CreateMonitorLandingPage } from './Github/CreateMonitorLandingPage'
 
 const monitoringLandingAfterCreation = new MonitoringLandingAfterCreation()
 const editMonitorSelectors = new EditMonitorSelectors()

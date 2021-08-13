@@ -1,5 +1,5 @@
 import { t, Selector } from 'testcafe'
-import { ApiTestingPage } from './bat/ApiTestingPage'
+import { ApiTestingPage } from './Github/ApiTestingPage'
 import { WaitConfig } from '../config/WaitConfig'
 
 

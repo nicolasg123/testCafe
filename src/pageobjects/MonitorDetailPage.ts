@@ -1,10 +1,10 @@
 import { Selector, t } from 'testcafe'
-import { MonitorDetailPageSelector } from './bat/MonitorDetailPageSelector'
-import { MonitoringLandingAfterCreation } from './bat/MonitoringLandingActionBar'
+import { MonitorDetailPageSelector } from './Github/MonitorDetailPageSelector'
+import { MonitoringLandingAfterCreation } from './Github/MonitoringLandingActionBar'
 import { WaitConfig } from '../config/WaitConfig'
-import { RunMonitorDialogSelectors } from './bat/RunMonitorDialogSelectors'
-import { AddScheduleSelectors } from './bat/AddScheduleSelectors'
-import { MonitorEditPageSelectors } from './bat/MonitorEditPageSelectors'
+import { RunMonitorDialogSelectors } from './Github/RunMonitorDialogSelectors'
+import { AddScheduleSelectors } from './Github/AddScheduleSelectors'
+import { MonitorEditPageSelectors } from './Github/MonitorEditPageSelectors'
 
 const monitorDetailPageSelector = new MonitorDetailPageSelector()
 const monitoringLandingAfterCreation = new MonitoringLandingAfterCreation()

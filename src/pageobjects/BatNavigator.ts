@@ -2,11 +2,11 @@ import { t } from 'testcafe'
 import { Main } from '../config/TestMain'
 import { ConsoleOutput } from '../config/ConsoleOutput'
 import { Credentials } from '../config/Credentials'
-import { AnypointLandingPage } from './bat/AnypointLandingPage'
-import { ApiTestingPage } from './bat/ApiTestingPage'
+import { AnypointLandingPage } from './Github/AnypointLandingPage'
+import { ApiTestingPage } from './Github/ApiTestingPage'
 import { LoginPage } from './LoginPage'
 import { LocalLoginPage } from './LocalLoginPage'
-import { OptInOptOutDialog } from './bat/OptInOptOutDialog'
+import { OptInOptOutDialog } from './Github/OptInOptOutDialog'
 
 const localLoginPage = new LocalLoginPage()
 const loginPage = new LoginPage()
