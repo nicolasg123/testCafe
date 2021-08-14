@@ -1,14 +1,31 @@
 import { t } from 'testcafe'
 import { ConsoleOutput } from '../config/ConsoleOutput'
+import { AddingRepo } from './AddingRepo'
+import { ProfileEdit } from './Github/ProfileEdit'
 import { LoginPage } from './LoginPage'
 
 
 const loginPage = new LoginPage()
+const addingRepo = new AddingRepo()
+const profileEdit = new ProfileEdit()
 /**
  * Login to Github.
  *
  */
 export class GitHub {
+  public static async createRepo() : Promise<boolean> {
+    const nameRepo = 'Repo';
+    await t.click(addingRepo.newRepoButton)
+    await t.click(addingRepo.repositoryName)
+    await t.typeText(addingRepo.repositoryName, nameRepo, {caretPos: 0})
+    return true
+  }
+
+  public static async profileEdit() : Promise<boolean> {
+    await t.click(profileEdit.profileEdit)
+    await t.click(profileEdit.yourProfile)
+    return true
+  }
 
   /**
    * Logs in to GitHub

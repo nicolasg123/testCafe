@@ -4,11 +4,8 @@ import { RequestLogger, Selector, t } from 'testcafe'
 import { ConsoleOutput } from '../../config/ConsoleOutput'
 import { TestCaseRunner } from '../../config/TestCaseRunner'
 import { Suites } from '../../config/Suites'
-import { ApiTestingPage } from '../../pageobjects/Github/ApiTestingPage'
-import { Locations } from '../../pageobjects/Locations'
 
 
-const apitestingPage = new ApiTestingPage()
 
 
 export class Tests implements IBasicTest {
@@ -29,13 +26,13 @@ export class Tests implements IBasicTest {
       await GitHub.login()
       }).it('logged SucessFull')
 
-      await this.testCaseRunner.when('Create private Location ', async () => {
-        await Locations.createLocations(locationName)    
-    }).it('Location should be created correctly')
+      await this.testCaseRunner.when('GitHubRepo creation', async () => {
+        await GitHub.createRepo();
+       }).it('Creation Successfull')
 
-    await this.testCaseRunner.when('Delete location', async () => {  
-      await Locations.DeleteLocation()    
-    }).it('Location should be removed correctly')
+        await this.testCaseRunner.when('profile edition', async () => {
+          await GitHub.profileEdit();
+        }).it('edition done')      
   }
 
   consoleOutput: ConsoleOutput

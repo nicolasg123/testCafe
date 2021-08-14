@@ -26,7 +26,7 @@
     "uuid": "latest"
   },
   "dependencies": {
-    "@testing-library/testcafe": "^4.2.0",
+    "@testing-library/testcafe": "^4.4.0",
     "downloads-folder": "^3.0.0",
     "is-zip-file": "^1.0.2",
     "os": "^0.1.1",
