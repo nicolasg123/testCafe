@@ -32,7 +32,12 @@ export class Tests implements IBasicTest {
 
         await this.testCaseRunner.when('profile edition', async () => {
           await GitHub.profileEdit();
-        }).it('edition done')      
+        }).it('edition done')    
+        
+        await this.testCaseRunner.when('GitHubRepo Watch', async () => {
+          await GitHub.repoWatch();
+         }).it('Creation Watch')
+  
   }
 
   consoleOutput: ConsoleOutput

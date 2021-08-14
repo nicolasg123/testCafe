@@ -2,17 +2,28 @@ import { t } from 'testcafe'
 import { ConsoleOutput } from '../config/ConsoleOutput'
 import { AddingRepo } from './AddingRepo'
 import { ProfileEdit } from './Github/ProfileEdit'
+import { WatchRepo } from './Github/WatchRepo'
 import { LoginPage } from './LoginPage'
 
 
 const loginPage = new LoginPage()
 const addingRepo = new AddingRepo()
 const profileEdit = new ProfileEdit()
+const watchRepo = new WatchRepo()
+
 /**
  * Login to Github.
  *
  */
 export class GitHub {
+  
+  public static async repoWatch() : Promise<boolean> {
+    const nameRepo = 'Repo';
+    await t.click(watchRepo.repoName)
+    await t.click(watchRepo.watchButton)
+    return true
+  }
+  
   public static async createRepo() : Promise<boolean> {
     const nameRepo = 'Repo';
     await t.click(addingRepo.newRepoButton)
