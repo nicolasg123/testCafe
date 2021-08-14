@@ -30,26 +30,26 @@ export type Environments = {
 export const Environments: Environments = {
 
     devx: {
-        baseUrl: "https://devx.anypoint.mulesoft.com",
+        baseUrl: "https://github.com",
     },
     devLocal: {
         baseUrl: "http://localhost:3000",
-        apiUrl: "https://devx.anypoint.mulesoft.com"
+        apiUrl: "https://github.com"
     },
     qax: {
-        baseUrl: "https://qax.anypoint.mulesoft.com",
+        baseUrl: "https://github.com",
     },
     qaLocal: {
         baseUrl: "http://localhost:3000",
-        apiUrl: "https://qax.anypoint.mulesoft.com"
+        apiUrl: "https://github.com"
     },
     stgx: {
-        baseUrl: "https://stgx.anypoint.mulesoft.com",
+        baseUrl: "https://github.com",
     },
     eu1: {
-        baseUrl: "https://eu1.anypoint.mulesoft.com",
+        baseUrl: "https://github.com",
     },
     prod: {
-        baseUrl: "https://anypoint.mulesoft.com",
+        baseUrl: "https://github.com",
     }
 };
