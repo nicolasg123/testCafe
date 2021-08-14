@@ -1,10 +1,9 @@
 import { IBasicTest, TestMeta, TestMetaSeverity } from '../IBasicTest'
-import { BatNavigator, GitHub } from '../../pageobjects'
+import { GitHub } from '../../pageobjects'
 import { RequestLogger, Selector, t } from 'testcafe'
 import { ConsoleOutput } from '../../config/ConsoleOutput'
 import { TestCaseRunner } from '../../config/TestCaseRunner'
 import { Suites } from '../../config/Suites'
-import { TestUtils } from '../../utils/TestUtils'
 import { ApiTestingPage } from '../../pageobjects/Github/ApiTestingPage'
 import { Locations } from '../../pageobjects/Locations'
 
@@ -30,17 +29,17 @@ export class Login implements IBasicTest {
 
       await GitHub.login()
       
-      await this.testCaseRunner.when('Check Locations Landing Page', async () => {
-      await Locations.checkLanding()   
-      }).it('Locations tab and Create button should exists')
+    //   await this.testCaseRunner.when('Check Locations Landing Page', async () => {
+    //   await Locations.checkLanding()   
+    //   }).it('Locations tab and Create button should exists')
 
-      await this.testCaseRunner.when('Create private Location ', async () => {
-        await Locations.createLocations(locationName)    
-    }).it('Location should be created correctly')
+    //   await this.testCaseRunner.when('Create private Location ', async () => {
+    //     await Locations.createLocations(locationName)    
+    // }).it('Location should be created correctly')
 
-    await this.testCaseRunner.when('Delete location', async () => {  
-      await Locations.DeleteLocation()    
-    }).it('Location should be removed correctly')
+    // await this.testCaseRunner.when('Delete location', async () => {  
+    //   await Locations.DeleteLocation()    
+    // }).it('Location should be removed correctly')
   }
 
   consoleOutput: ConsoleOutput
