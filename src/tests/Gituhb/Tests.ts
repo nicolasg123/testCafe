@@ -11,9 +11,9 @@ import { Locations } from '../../pageobjects/Locations'
 const apitestingPage = new ApiTestingPage()
 
 
-export class Login implements IBasicTest {
+export class Tests implements IBasicTest {
   public meta: TestMeta = {
-    ID: 'Login',
+    ID: 'Test',
     SEVERITY: TestMetaSeverity.blocker,
     STORY: 'Login',
     TEST_RUN: 0,
@@ -25,21 +25,17 @@ export class Login implements IBasicTest {
    */
 
   public async runTest(): Promise<any> {
-     //const locationName = await TestUtils.makeId(5)
-
+      await this.testCaseRunner.when('GitHubLogin', async () => {
       await GitHub.login()
-      
-    //   await this.testCaseRunner.when('Check Locations Landing Page', async () => {
-    //   await Locations.checkLanding()   
-    //   }).it('Locations tab and Create button should exists')
+      }).it('logged SucessFull')
 
-    //   await this.testCaseRunner.when('Create private Location ', async () => {
-    //     await Locations.createLocations(locationName)    
-    // }).it('Location should be created correctly')
+      await this.testCaseRunner.when('Create private Location ', async () => {
+        await Locations.createLocations(locationName)    
+    }).it('Location should be created correctly')
 
-    // await this.testCaseRunner.when('Delete location', async () => {  
-    //   await Locations.DeleteLocation()    
-    // }).it('Location should be removed correctly')
+    await this.testCaseRunner.when('Delete location', async () => {  
+      await Locations.DeleteLocation()    
+    }).it('Location should be removed correctly')
   }
 
   consoleOutput: ConsoleOutput
@@ -47,5 +43,5 @@ export class Login implements IBasicTest {
   requestLogger: RequestLogger = RequestLogger()
 }
 
-const tn = new Login()
+const tn = new Tests()
 Suites.runTest(tn)
