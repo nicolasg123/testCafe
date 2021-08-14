@@ -15,15 +15,15 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "ts-node": "^8.5.2",
     "@ffmpeg-installer/ffmpeg": "^1.0.20",
     "chalk": "^2.4.2",
     "multiple-cucumber-html-reporter": "^1.11.6",
-    "testcafe": "^1.9.3",
+    "testcafe": "^1.15.2",
     "testcafe-reporter-cucumber-json": "^1.2.0",
-    "uuid": "latest",
+    "ts-node": "^8.5.2",
     "tslint": "^5.18.0",
-    "typescript": "^3.5.2"
+    "typescript": "^3.5.2",
+    "uuid": "latest"
   },
   "dependencies": {
     "@testing-library/testcafe": "^4.2.0",
