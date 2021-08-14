@@ -5,8 +5,9 @@ import {Selector} from "testcafe";
  */
 export class LoginPage {
 
-    public userNameInput = Selector("[data-test-id=\"SignIn-Username\"]");
-    public passwordInput = Selector("[data-test-id=\"SignIn-Password\"]");
+    public userNameInput = Selector('input').withAttribute('type','text');
+    public passwordInput = Selector('input').withAttribute('type','password');
+    public loginButton = Selector('input').withAttribute('type','submit');
     public signInButton = Selector("a").withText("Sign in");
 
 }

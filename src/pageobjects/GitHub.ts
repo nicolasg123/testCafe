@@ -22,12 +22,11 @@ export class GitHub {
 
     ConsoleOutput.startedTestGlobal(`Logging in to github... (User: ${username})`)
     await t.click(loginPage.signInButton)
-    // await t.click(loginPage.passwordInput)
-    // await t.typeText(loginPage.passwordInput, password, {caretPos: 0})
-    // await t.pressKey('enter')
-    // await anypointLanding.at()
-    // await anypointLanding.goToMonitoring()
-    // await apitestingPage.at()
+    await t.click(loginPage.userNameInput)
+    await t.typeText(loginPage.userNameInput, username, {caretPos: 0})
+    await t.click(loginPage.passwordInput)
+    await t.typeText(loginPage.passwordInput, password, {caretPos: 0})
+    await t.click(loginPage.loginButton)
     ConsoleOutput.successfulTestGlobal('Logged in')
     return true
   }  
