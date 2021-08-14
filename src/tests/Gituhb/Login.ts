@@ -1,5 +1,5 @@
 import { IBasicTest, TestMeta, TestMetaSeverity } from '../IBasicTest'
-import { BatNavigator } from '../../pageobjects'
+import { BatNavigator, GitHub } from '../../pageobjects'
 import { RequestLogger, Selector, t } from 'testcafe'
 import { ConsoleOutput } from '../../config/ConsoleOutput'
 import { TestCaseRunner } from '../../config/TestCaseRunner'
@@ -12,13 +12,13 @@ import { Locations } from '../../pageobjects/Locations'
 const apitestingPage = new ApiTestingPage()
 
 
-export class LocationsSuite implements IBasicTest {
+export class Login implements IBasicTest {
   public meta: TestMeta = {
-    ID: 'LocationsSuite',
+    ID: 'Login',
     SEVERITY: TestMetaSeverity.blocker,
-    STORY: 'LocationsSuite',
+    STORY: 'Login',
     TEST_RUN: 0,
-    SAUCE_JOB: 'LocationsSuite',
+    SAUCE_JOB: 'Login',
   }
 
   /**
@@ -26,9 +26,9 @@ export class LocationsSuite implements IBasicTest {
    */
 
   public async runTest(): Promise<any> {
-     const locationName = await TestUtils.makeId(5)
+     //const locationName = await TestUtils.makeId(5)
 
-      await BatNavigator.loginAndGoToMonitoring()
+      await GitHub.login()
       
       await this.testCaseRunner.when('Check Locations Landing Page', async () => {
       await Locations.checkLanding()   
@@ -48,5 +48,5 @@ export class LocationsSuite implements IBasicTest {
   requestLogger: RequestLogger = RequestLogger()
 }
 
-const tn = new LocationsSuite()
+const tn = new Login()
 Suites.runTest(tn)

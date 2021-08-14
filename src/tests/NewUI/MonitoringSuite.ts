@@ -1,6 +1,6 @@
 import { RequestLogger, t } from 'testcafe'
 import { ConsoleOutput } from '../../config/ConsoleOutput'
-import { BatNavigator } from '../../pageobjects/BatNavigator'
+import { BatNavigator } from '../../pageobjects/GitHub'
 import { Suites } from '../../config/Suites'
 import { IBasicTest, TestMeta, TestMetaSeverity } from '../IBasicTest'
 import { TestCaseRunner } from '../../config/TestCaseRunner'
