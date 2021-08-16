@@ -7,6 +7,6 @@ import {Selector} from "testcafe";
  */
 export class WatchRepo {
 
-    public repoName = Selector('span').withAttribute('title', 'Seleniume2e').withText('Seleniume2e')
+    public repoName = Selector('span').withText('Seleniume2e')
     public watchButton = Selector('span').withAttribute('data-target','notifications-list-subscription-form.unwatchButtonCopy')
 }
