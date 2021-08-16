@@ -29,6 +29,7 @@ export class GitHub {
     await t.click(addingRepo.newRepoButton)
     await t.click(addingRepo.repositoryName)
     await t.typeText(addingRepo.repositoryName, nameRepo, {caretPos: 0})
+    await t.click(addingRepo.createRepoButton)
     return true
   }
 
