@@ -7,6 +7,6 @@ import {Selector} from "testcafe";
  */
 export class ProfileEdit {
 
-    public profileEdit = Selector('img').withAttribute('alt', '@nicolasg123');
-    public yourProfile = Selector('a').withAttribute('role','menuitem').withText('Your profile')
+    public profile = Selector('a').withAttribute('role', 'menuitem');
+    public  profileEditButton = Selector('summary').withAttribute('role','button')
 }
