@@ -35,7 +35,7 @@ export class GitHub {
 
   public static async profileEdit() : Promise<boolean> {
     await t.click(profileEdit.profileEditButton)
-    await t.click(profileEdit.yourProfile)
+    await t.click(profileEdit.profile)
     return true
   }
 
